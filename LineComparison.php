@@ -30,8 +30,7 @@
     }
      /**
      * Function to Calculate length of the points
-     * Using own Power function
-     * returns the length
+     * using given formula
      */
     function calculateLength(){
         $this->userInput();
