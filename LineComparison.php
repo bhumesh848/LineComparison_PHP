@@ -37,17 +37,19 @@
         $length = sqrt(($this->x2-$this->x1)^2 + ($this->y2-$this->y1)^2);
         return $length;
     }
-    /**
+      /**
      * Function to check the equality of two lengths
      * Passing length1 and length2 as parameters
-     * Prints if equal or not
+     * Prints whether lengths are equal, greater or smaller
      */
     function checkEquality($length1, $length2)
     {
         if ($length1 == $length2) {
             echo "\nBoth have Equal Length";
+        } elseif ($length1 > $length2) {
+            echo "\nLength1 is Greater than Length2\n";
         } else {
-            echo "\nNot equal";
+            echo "\nLength2 is Greater than Length1\n";
         }
     }
      }
