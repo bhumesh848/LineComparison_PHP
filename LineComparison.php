@@ -37,9 +37,26 @@
         $length = sqrt(($this->x2-$this->x1)^2 + ($this->y2-$this->y1)^2);
         return $length;
     }
+    /**
+     * Function to check the equality of two lengths
+     * Passing length1 and length2 as parameters
+     * Prints if equal or not
+     */
+    function checkEquality($length1, $length2)
+    {
+        if ($length1 == $length2) {
+            echo "\nBoth have Equal Length";
+        } else {
+            echo "\nNot equal";
+        }
+    }
      }
      $lineComparison = new LineComparison();
      $lineComparison->welcomeMessage();
-    echo  $lineComparison->calculateLength();
+     $length1 = $lineComparison->calculateLength();
+     echo "\nLength 1:" . $length1."\n";
+     $length2 = $lineComparison->calculateLength();
+     echo "\nLength 2:" . $length2;
+     $lineComparison->checkEquality($length1, $length2);
     
 ?>
